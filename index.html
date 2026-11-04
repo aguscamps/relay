@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vendor Management | Relay</title>
+  <meta name="description" content="Relay Vendor Management brings onboarding, documents, approvals and contracts into one platform for Procurement and Operations teams.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#12163a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:opsz,wght@144,600&family=Space+Grotesk:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__row">
+      <a class="logo" href="#" aria-label="Relay home">
+        <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="5" cy="5" r="3.5"/><circle cx="5" cy="21" r="3.5"/><circle cx="21" cy="13" r="4.5"/><path d="M8 6.5 17 11.5M8 19.5l9-5" fill="none" stroke-width="2"/></svg>
+        <span>Relay</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#" class="is-current">Solutions</a>
+        <a href="#">Customers</a>
+        <a href="#">Resources</a>
+        <a href="#">Company</a>
+        <a href="#" class="site-nav__signin">Sign in</a>
+      </nav>
+      <div class="site-header__actions">
+        <a class="signin" href="#">Sign in</a>
+        <div class="lang">
+          <span class="sr-only" id="lang-label">Language</span>
+          <div class="lang__button" role="combobox" tabindex="0" aria-labelledby="lang-label lang-value" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-list"><span id="lang-value">EN</span></div>
+          <ul class="lang__list" id="lang-list" role="listbox" aria-labelledby="lang-label" hidden>
+            <li role="option" id="lang-en" lang="en" aria-selected="true" data-code="EN"><b>EN</b><span>English</span></li>
+            <li role="option" id="lang-es" lang="es" aria-selected="false" data-code="ES"><b>ES</b><span>Español</span></li>
+            <li role="option" id="lang-pt" lang="pt" aria-selected="false" data-code="PT"><b>PT</b><span>Português</span></li>
+            <li role="option" id="lang-de" lang="de" aria-selected="false" data-code="DE"><b>DE</b><span>Deutsch</span></li>
+            <li role="option" id="lang-fr" lang="fr" aria-selected="false" data-code="FR"><b>FR</b><span>Français</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <ol><li><a href="#">Solutions</a></li><li><span aria-current="page">Vendor Management</span></li></ol>
+          </nav>
+          <p class="eyebrow">Now available in Relay</p>
+          <h1>Vendor management, without the spreadsheets.</h1>
+          <p class="lead">Relay brings scattered emails, spreadsheets and files into one platform for onboarding, documents, approvals and contracts. Built for Procurement and Operations teams at large organizations.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" type="button" data-open-demo data-cta-watch>Request a demo</button>
+            <a class="btn btn--link" href="#problem">Explore <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero__visual" role="img" aria-label="Relay dashboard listing vendors with their onboarding stage and risk level, next to an AI alert flagging a vendor whose insurance certificate expired.">
+          <div class="panel" aria-hidden="true">
+            <div class="panel__bar">
+              <strong>Vendors</strong>
+              <span class="panel__search">Search vendors</span>
+            </div>
+            <div class="vtable">
+              <div class="vtable__row vtable__row--head"><span>Vendor</span><span>Stage</span><span>Documents</span><span>Risk</span></div>
+              <div class="vtable__row"><span class="vname"><i>NL</i>Northwind Logistics</span><span>Active</span><span>12 of 12</span><span><b class="tag tag--ok">Low</b></span></div>
+              <div class="vtable__row"><span class="vname"><i>HP</i>Helix Packaging</span><span>Finance review</span><span>9 of 12</span><span><b class="tag tag--ok">Low</b></span></div>
+              <div class="vtable__row"><span class="vname"><i>OF</i>Orbit Freight</span><span>Renewal due</span><span>12 of 12</span><span><b class="tag tag--warn">Medium</b></span></div>
+              <div class="vtable__row"><span class="vname"><i>KS</i>Kestrel Supplies</span><span>Onboarding</span><span>4 of 12</span><span><b class="tag tag--ok">Low</b></span></div>
+              <div class="vtable__row vtable__row--flagged"><span class="vname"><i>BT</i>Brightline Tech</span><span>Active</span><span>11 of 12</span><span><b class="tag tag--risk">High</b></span></div>
+              <div class="vtable__row"><span class="vname"><i>MC</i>Meridian Components</span><span>Active</span><span>12 of 12</span><span><b class="tag tag--ok">Low</b></span></div>
+            </div>
+          </div>
+          <div class="float-card" aria-hidden="true">
+            <span class="float-card__icon float-card__icon--ai"><svg class="ai-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9 2c.45 3.9 2.6 6.05 6.5 6.5C11.6 8.95 9.45 11.1 9 15c-.45-3.9-2.6-6.05-6.5-6.5C6.4 8.05 8.55 5.9 9 2Z"/><path d="M15.5 12.5c.18 1.5.9 2.2 2.5 2.5-1.6.3-2.32 1-2.5 2.5-.18-1.5-.9-2.2-2.5-2.5 1.6-.3 2.32-1 2.5-2.5Z"/></svg></span>
+            <div class="float-card__body">
+              <p class="float-card__meta">Relay AI · Just now</p>
+              <p><strong>Brightline Tech flagged as high risk</strong>Insurance certificate expired</p>
+              <span class="float-card__action">Review vendor</span>
+            </div>
+            <span class="float-card__close">×</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section__head">
+          <h2>Vendor work lives everywhere. Now it lives in one place.</h2>
+          <p class="lead">Every vendor means forms, approvals and contracts spread across inboxes, files and systems. Relay connects them, so everyone sees the same status.</p>
+        </div>
+
+        <div class="flow" role="img" aria-label="Emails, spreadsheets, documents and internal systems connect into a single vendor record in Relay.">
+          <ul class="flow__sources" aria-hidden="true">
+            <li><span class="ficon"><svg width="28" height="22" viewBox="0 0 28 22"><rect x="1.5" y="1.5" width="25" height="19" rx="3" fill="#fff" stroke="#12163a" stroke-width="1.5"/><path d="m3 4 11 8.5L25 4" fill="none" stroke="#1a73e8" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><span class="flow__name">Re: Re: FW: insurance form</span><b class="flow__count">23 emails</b></li>
+            <li><span class="ficon"><svg width="26" height="30" viewBox="0 0 26 30"><path d="M3 2.5h13l7 7V27a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 3 27z" fill="#fff" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 2.5v7h7" fill="none" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><rect x="0.5" y="14" width="20" height="9" rx="2" fill="#217346"/><text x="10.5" y="20.9" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="7" font-weight="800" fill="#fff">XLS</text></svg></span><span class="flow__name">vendors_final_v3.xlsx</span><b class="flow__count">8 sheets</b></li>
+            <li><span class="ficon"><svg width="26" height="30" viewBox="0 0 26 30"><path d="M3 2.5h13l7 7V27a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 3 27z" fill="#fff" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 2.5v7h7" fill="none" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><rect x="0.5" y="14" width="20" height="9" rx="2" fill="#d93025"/><text x="10.5" y="20.9" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="7" font-weight="800" fill="#fff">PDF</text></svg></span><span class="flow__name">contract_signed_new.pdf</span><b class="flow__count">14 PDFs</b></li>
+            <li><span class="ficon"><svg width="28" height="24" viewBox="0 0 28 24"><path d="M1.5 4A1.5 1.5 0 0 1 3 2.5h7l3 3h12A1.5 1.5 0 0 1 26.5 7v14a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 21z" fill="#fff" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><path d="M1.5 9h25" stroke="#e8a317" stroke-width="1.8"/></svg></span><span class="flow__name">Shared drive / Vendors / old</span><b class="flow__count">6 folders</b></li>
+            <li><span class="ficon"><svg width="24" height="28" viewBox="0 0 24 28"><ellipse cx="12" cy="5" rx="10" ry="3.5" fill="#5f6b7a"/><path d="M2 5v18c0 1.9 4.5 3.5 10 3.5s10-1.6 10-3.5V5" fill="#fff" stroke="#12163a" stroke-width="1.5"/><path d="M2 11.5c0 1.9 4.5 3.5 10 3.5s10-1.6 10-3.5M2 17.5c0 1.9 4.5 3.5 10 3.5s10-1.6 10-3.5" fill="none" stroke="#12163a" stroke-width="1.5"/></svg></span><span class="flow__name">ERP vendor record #4471</span><b class="flow__count">5 systems</b></li>
+          </ul>
+          <svg class="flow__lines" viewBox="0 0 200 400" preserveAspectRatio="none" aria-hidden="true">
+            <defs><linearGradient id="flow-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="200" y2="0"><stop offset="0" stop-color="#3b2fe0"/><stop offset="1" stop-color="#27d3b8"/></linearGradient></defs>
+            <path d="M0 28C110 28 90 200 200 200"/><path d="M0 114C110 114 90 200 200 200"/><path d="M0 200H200"/><path d="M0 286C110 286 90 200 200 200"/><path d="M0 372C110 372 90 200 200 200"/>
+          </svg>
+          <div class="flow__bubbles" aria-hidden="true">
+            <svg class="flow__bubbles-lines" viewBox="0 0 310 150" preserveAspectRatio="none"><path d="M26 26C26 120 155 100 155 150"/><path d="M90 56C90 120 155 100 155 150"/><path d="M155 26C155 120 155 100 155 150"/><path d="M220 56C220 120 155 100 155 150"/><path d="M284 26C284 120 155 100 155 150"/></svg>
+            <ul><li><svg width="28" height="22" viewBox="0 0 28 22"><rect x="1.5" y="1.5" width="25" height="19" rx="3" fill="#fff" stroke="#12163a" stroke-width="1.5"/><path d="m3 4 11 8.5L25 4" fill="none" stroke="#1a73e8" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg><b>23</b></li><li><svg width="26" height="30" viewBox="0 0 26 30"><path d="M3 2.5h13l7 7V27a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 3 27z" fill="#fff" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 2.5v7h7" fill="none" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><rect x="0.5" y="14" width="20" height="9" rx="2" fill="#217346"/><text x="10.5" y="20.9" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="7" font-weight="800" fill="#fff">XLS</text></svg><b>8</b></li><li><svg width="26" height="30" viewBox="0 0 26 30"><path d="M3 2.5h13l7 7V27a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 3 27z" fill="#fff" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 2.5v7h7" fill="none" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><rect x="0.5" y="14" width="20" height="9" rx="2" fill="#d93025"/><text x="10.5" y="20.9" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="7" font-weight="800" fill="#fff">PDF</text></svg><b>14</b></li><li><svg width="28" height="24" viewBox="0 0 28 24"><path d="M1.5 4A1.5 1.5 0 0 1 3 2.5h7l3 3h12A1.5 1.5 0 0 1 26.5 7v14a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 21z" fill="#fff" stroke="#12163a" stroke-width="1.5" stroke-linejoin="round"/><path d="M1.5 9h25" stroke="#e8a317" stroke-width="1.8"/></svg><b>6</b></li><li><svg width="24" height="28" viewBox="0 0 24 28"><ellipse cx="12" cy="5" rx="10" ry="3.5" fill="#5f6b7a"/><path d="M2 5v18c0 1.9 4.5 3.5 10 3.5s10-1.6 10-3.5V5" fill="#fff" stroke="#12163a" stroke-width="1.5"/><path d="M2 11.5c0 1.9 4.5 3.5 10 3.5s10-1.6 10-3.5M2 17.5c0 1.9 4.5 3.5 10 3.5s10-1.6 10-3.5" fill="none" stroke="#12163a" stroke-width="1.5"/></svg><b>5</b></li></ul>
+          </div>
+          <div class="record" aria-hidden="true">
+            <div class="record__head"><i>NL</i><div><strong>Northwind Logistics</strong><span>Active vendor</span></div><b class="tag tag--ok">Low risk</b></div>
+            <dl>
+              <div><dt>Documents</dt><dd>12 of 12 up to date</dd></div>
+              <div><dt>Approval</dt><dd>Procurement, Legal, Finance</dd></div>
+              <div><dt>Contract</dt><dd>Renews Mar 14</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect" id="integrations">
+      <div class="container connect__grid">
+        <div>
+          <h2>Works with the systems your teams already use.</h2>
+          <p class="lead">Connect Relay to your existing systems. Adopting it doesn't mean replacing what already works.</p>
+        </div>
+        <div class="hub">
+          <svg class="hub__lines" viewBox="0 0 560 400" preserveAspectRatio="none" aria-hidden="true">
+            <path class="hub__track" d="M280 28V210"/><path class="hub__track" d="M112 320 280 210"/><path class="hub__track" d="M448 320 280 210"/><path class="hub__flow" d="M280 28V210"/><path class="hub__flow" d="M112 320 280 210"/><path class="hub__flow" d="M448 320 280 210"/>
+          </svg>
+          <div class="hub__rings" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><i></i><i></i></div>
+          <span class="hub__core"><svg width="40" height="40" viewBox="0 0 26 26" aria-hidden="true"><circle cx="5" cy="5" r="3.5"/><circle cx="5" cy="21" r="3.5"/><circle cx="21" cy="13" r="4.5"/><path d="M8 6.5 17 11.5M8 19.5l9-5" fill="none" stroke-width="2"/></svg>Relay</span>
+          <ul>
+            <li class="hub__node hub__node--a"><img class="brand brand--sap" src="logos/sap.svg" alt="SAP"></li>
+            <li class="hub__node hub__node--b"><img class="brand brand--salesforce" src="logos/salesforce.svg" alt="">Salesforce</li>
+            <li class="hub__node hub__node--c"><img class="brand brand--ms" src="logos/microsoft.svg" alt="">Microsoft Dynamics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="product">
+      <div class="container">
+        <div class="section__head">
+          <h2>Manage every vendor, from onboarding to renewal.</h2>
+          <p class="lead">Vendor details, documents, approvals and contract dates sit together in one shared view, so teams in every country find what they need without asking around. Its AI flags missing documents, compliance issues and potential risks early, and each vendor's status stays up to date.</p>
+        </div>
+
+        <div class="dash" role="img" aria-label="Relay overview dashboard with vendor totals, the onboarding pipeline, risk alerts, pending approvals and upcoming contract renewals.">
+          <div class="dash__chrome" aria-hidden="true"><i></i><i></i><i></i><span>app.relay.com</span></div>
+          <div class="dash__nav" aria-hidden="true">
+            <span class="dash__brand"><svg width="22" height="22" viewBox="0 0 26 26"><circle cx="5" cy="5" r="3.5"/><circle cx="5" cy="21" r="3.5"/><circle cx="21" cy="13" r="4.5"/><path d="M8 6.5 17 11.5M8 19.5l9-5" fill="none" stroke-width="2"/></svg></span>
+            <ul>
+              <li class="is-active" title="Overview"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M3 10 10 4l7 6v7H3z"/></svg></li><li title="Vendors"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 6h12M4 10h12M4 14h12"/></svg></li><li title="Onboarding"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 10h8M9 6l4 4-4 4"/><path d="M16 4v12"/></svg></li><li title="Approvals"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="m4 10 4 4 8-8"/></svg></li><li title="Contracts"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M6 3h6l3 3v11H6z"/></svg></li><li title="Risk"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M10 3 16 6v4c0 4-3 6-6 7-3-1-6-3-6-7V6z"/></svg></li><li title="Integrations"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M7 3v5M13 3v5M5 8h10v3a5 5 0 0 1-10 0z"/></svg></li>
+            </ul>
+          </div>
+          <div class="dash__main" aria-hidden="true">
+            <div class="dash__top"><strong>Overview</strong><span class="panel__search">Search vendors</span></div>
+            <div class="dash__kpis has-marker"><div class="callout callout--left"><strong>One place for every vendor</strong><span>All vendor data, documents and activity together.</span></div>
+              <div><span>Active vendors</span><b>1,248</b></div>
+              <div><span>In onboarding</span><b>36</b></div>
+              <div><span>Pending approvals</span><b>14</b></div>
+              <div><span>Expiring documents</span><b>9</b></div>
+            </div>
+            <div class="dash__grid">
+              <div class="dash__card has-marker"><div class="callout callout--left"><strong>Faster onboarding</strong><span>Structured steps and fewer manual follow-ups.</span></div>
+                <p class="dash__title">Onboarding pipeline</p>
+                <ul class="pipe">
+                  <li><span>Documents</span><i style="--w:100%"></i><b>14</b></li>
+                  <li><span>Legal review</span><i style="--w:64%"></i><b>9</b></li>
+                  <li><span>Security review</span><i style="--w:50%"></i><b>7</b></li>
+                  <li><span>Finance</span><i style="--w:43%"></i><b>6</b></li>
+                </ul>
+              </div>
+              <div class="dash__card has-marker"><div class="callout callout--right"><strong>Flexible approvals</strong><span>Workflows that match how your organization works.</span></div>
+                <p class="dash__title">Pending approvals</p>
+                <ul class="dash__list">
+                  <li><span><strong>Helix Packaging</strong>Waiting on Finance</span><b class="tag tag--warn">2 days</b></li>
+                  <li><span><strong>Kestrel Supplies</strong>Waiting on Procurement</span><b class="tag tag--ok">Today</b></li>
+                  <li><span><strong>Aster Cleaning</strong>Waiting on Finance</span><b class="tag tag--ok">Today</b></li>
+                </ul>
+              </div>
+              <div class="dash__card dash__card--ai has-marker"><div class="callout callout--left"><strong class="has-ai"><svg class="ai-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9 2c.45 3.9 2.6 6.05 6.5 6.5C11.6 8.95 9.45 11.1 9 15c-.45-3.9-2.6-6.05-6.5-6.5C6.4 8.05 8.55 5.9 9 2Z"/><path d="M15.5 12.5c.18 1.5.9 2.2 2.5 2.5-1.6.3-2.32 1-2.5 2.5-.18-1.5-.9-2.2-2.5-2.5 1.6-.3 2.32-1 2.5-2.5Z"/></svg>AI risk detection</strong><span>Flags compliance and risk issues early.</span></div>
+                <p class="dash__title">Risk alerts <span class="ai-badge"><svg class="ai-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9 2c.45 3.9 2.6 6.05 6.5 6.5C11.6 8.95 9.45 11.1 9 15c-.45-3.9-2.6-6.05-6.5-6.5C6.4 8.05 8.55 5.9 9 2Z"/><path d="M15.5 12.5c.18 1.5.9 2.2 2.5 2.5-1.6.3-2.32 1-2.5 2.5-.18-1.5-.9-2.2-2.5-2.5 1.6-.3 2.32-1 2.5-2.5Z"/></svg>AI</span></p>
+                <ul class="dash__list">
+                  <li><span><strong>Brightline Tech</strong>Insurance certificate expired</span><b class="tag tag--risk">High</b></li>
+                  <li><span><strong>Orbit Freight</strong>Contract renewal pending</span><b class="tag tag--warn">Medium</b></li>
+                  <li><span><strong>Delta Print Co.</strong>Tax registration missing</span><b class="tag tag--warn">Medium</b></li>
+                </ul>
+              </div>
+              <div class="dash__card has-marker"><div class="callout callout--right"><strong>Contracts and key dates</strong><span>Track renewals before they become urgent.</span></div>
+                <p class="dash__title">Upcoming renewals</p>
+                <ul class="dash__list">
+                  <li><span><strong>Orbit Freight</strong>Logistics contract</span><time>Mar 2</time></li>
+                  <li><span><strong>Northwind Logistics</strong>Master agreement</span><time>Mar 14</time></li>
+                  <li><span><strong>Meridian Components</strong>Supply agreement</span><time>Apr 8</time></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="legend">
+          <li><h3>One place for every vendor</h3><p>All vendor data, documents and activity together.</p></li>
+          <li><h3>Faster onboarding</h3><p>Structured steps and fewer manual follow-ups.</p></li>
+          <li><h3>Flexible approvals</h3><p>Workflows that match how your organization works.</p></li>
+          <li><h3 class="has-ai"><svg class="ai-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9 2c.45 3.9 2.6 6.05 6.5 6.5C11.6 8.95 9.45 11.1 9 15c-.45-3.9-2.6-6.05-6.5-6.5C6.4 8.05 8.55 5.9 9 2Z"/><path d="M15.5 12.5c.18 1.5.9 2.2 2.5 2.5-1.6.3-2.32 1-2.5 2.5-.18-1.5-.9-2.2-2.5-2.5 1.6-.3 2.32-1 2.5-2.5Z"/></svg>AI risk detection</h3><p>Flags compliance and risk issues early.</p></li>
+          <li><h3>Contracts and key dates</h3><p>Track renewals before they become urgent.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="proof" id="proof">
+      <div class="container">
+        <h2>The difference, in numbers.</h2>
+        <dl class="stats">
+          <div><dt>faster vendor onboarding</dt><dd><span class="count" aria-hidden="true" data-target="40" data-suffix="%">40%</span><span class="sr-only">40%</span></dd></div>
+          <div><dt>manual follow-ups</dt><dd><span class="count" aria-hidden="true" data-target="65" data-prefix="−" data-suffix="%">−65%</span><span class="sr-only">−65%</span></dd></div>
+          <div><dt>organizations use Relay</dt><dd><span class="count" aria-hidden="true" data-target="200" data-suffix="+">200+</span><span class="sr-only">200+</span></dd></div>
+        </dl>
+        <div class="testimonials" tabindex="0" role="group" aria-label="Customer testimonials">
+          <figure class="tcard">
+            <p class="clogo clogo--acme" role="img" aria-label="Acme Group"><span aria-hidden="true">ACME</span><small aria-hidden="true">GROUP</small></p>
+            <blockquote>“Relay gave our teams a single place to manage a process that previously lived across spreadsheets, emails and five different systems.”</blockquote>
+            <figcaption><span><strong>Sarah Mitchell</strong>VP of Procurement, Acme Group</span></figcaption>
+          </figure>
+          <figure class="tcard">
+            <p class="clogo clogo--halden" role="img" aria-label="Halden Foods"><svg width="30" height="34" viewBox="0 0 30 34" aria-hidden="true"><path fill="currentColor" d="M15 1c9 6 13 13 9 21-2 4-5 6-8 7v4h-2v-4c-3-1-6-3-8-7C2 14 6 7 15 1z"/><path fill="none" stroke="#fff" stroke-width="1.6" d="M15 29V10M15 17l5-5M15 22l-5-5"/></svg><span aria-hidden="true">halden<small>FOODS</small></span></p>
+            <blockquote>“New vendors no longer get lost in someone's inbox. Everyone can see where each one stands.”</blockquote>
+            <figcaption><span><strong>Daniel Okafor</strong>Head of Operations, Halden Foods</span></figcaption>
+          </figure>
+          <figure class="tcard">
+            <p class="clogo clogo--tessel" role="img" aria-label="Tessel Industrial"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path fill="currentColor" d="M17 2 30 9.5 17 17 4 9.5z"/><path fill="currentColor" d="M4 12v15l12 7V19z"/><path fill="currentColor" d="M30 12v15l-12 7V19z"/></svg><span aria-hidden="true">TESSEL<small>INDUSTRIAL</small></span></p>
+            <blockquote>“We set up approvals to match how each region works, without rebuilding our process.”</blockquote>
+            <figcaption><span><strong>Laura Brandt</strong>Sourcing Director, Tessel Industrial</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq">
+        <h2>Questions, answered.</h2>
+        <div class="faq__list">
+          <details name="faq">
+            <summary>Who is Relay built for?</summary>
+            <p>Procurement and Operations teams at large organizations, with many vendors, teams and processes across different countries.</p>
+          </details>
+          <details name="faq">
+            <summary>Will it work with the systems we already use?</summary>
+            <p>Yes. Relay integrates with the systems your teams already use, including SAP, Salesforce and Microsoft Dynamics. Using a different system? Ask our team during your demo and we'll look at how to connect it.</p>
+          </details>
+          <details name="faq">
+            <summary>Can it adapt to our approval process?</summary>
+            <p>Yes. Approval workflows are configurable, so they follow your organization's structure and requirements.</p>
+          </details>
+          <details name="faq">
+            <summary>How does Relay use AI?</summary>
+            <p>It flags potential compliance and risk issues, such as an expired insurance certificate or missing tax registration, so your team can review them early.</p>
+          </details>
+          <details name="faq">
+            <summary>Does it work with other Relay solutions?</summary>
+            <p>Yes. Vendor Management is available in Relay and works alongside any other Relay solutions your organization already uses.</p>
+          </details>
+          <details name="faq">
+            <summary>How much does Relay cost?</summary>
+            <p>Our sales team will walk you through pricing during your demo, based on your organization's needs.</p>
+          </details>
+          <details name="faq">
+            <summary>What happens after I request a demo?</summary>
+            <p>Our sales team reviews your request, contacts you and arranges a demo.</p>
+          </details>
+          <p class="faq__more">Didn't find your question? Request a demo below and ask our team directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="floating-cta" aria-label="Request a demo">
+      <strong>See Relay in action</strong>
+      <button class="btn btn--primary btn--sm" type="button" data-open-demo>Request a demo</button>
+      <ul class="floating-cta__stats">
+        <li><b>40%</b> faster onboarding</li>
+        <li><b>−65%</b> manual <span class="nowrap">follow-ups</span></li>
+        <li><b>200+</b> organizations</li>
+      </ul>
+    </aside>
+    <div class="cta-sentinel" aria-hidden="true"></div>
+  </main>
+
+  <div class="end-bg" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    <div class="container site-footer__row">
+      <span class="logo logo--small">Relay</span>
+      <p>© 2026 Relay. All rights reserved.</p>
+    </div>
+  </footer>
+
+<a class="to-top" href="#main" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 16V4M4.5 9.5 10 4l5.5 5.5"/></svg></a>
+
+  <dialog class="demo" id="demo" aria-labelledby="demo-title">
+    <button class="demo__close" type="button" data-close-demo aria-label="Close"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4l10 10M14 4 4 14"/></svg></button>
+
+    <div class="demo__layout">
+    <div class="demo__aside">
+      <div class="demo__intro">
+        <h2 id="demo-title">Request a demo</h2>
+        <p id="demo-intro">Tell us a bit about you and your company.</p>
+      </div>
+      <div class="demo__next">
+        <p class="demo__kicker">What happens next</p>
+        <ol class="demo__steps">
+          <li><strong>We review your request</strong>using the details you shared.</li>
+          <li><strong>Our sales team contacts you</strong>to find a time that works for you.</li>
+          <li><strong>You get a demo</strong>focused on how your organization manages vendors.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="demo__main">
+    <div class="demo__form" data-view="form">
+      <p class="sr-only" id="demo-status" role="status"></p>
+      <form novalidate>
+        <p class="req-legend"><span class="req" aria-hidden="true">*</span> Required fields</p>
+        <div class="field">
+          <label for="name"><span class="req" aria-hidden="true">*</span> Full name</label>
+          <input id="name" autofocus name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+          <p class="field__error" id="name-error" hidden></p>
+        </div>
+        <div class="field">
+          <label for="email"><span class="req" aria-hidden="true">*</span> Work email</label>
+          <p class="field__hint" id="email-hint">Only work email addresses are accepted.</p>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint email-error">
+          <p class="field__error" id="email-error" hidden></p>
+        </div>
+        <div class="field">
+          <label for="company"><span class="req" aria-hidden="true">*</span> Company</label>
+          <input id="company" name="company" type="text" autocomplete="organization" required aria-describedby="company-error">
+          <p class="field__error" id="company-error" hidden></p>
+        </div>
+        <div class="field">
+          <label for="industry"><span class="req" aria-hidden="true">*</span> Industry</label>
+          <select id="industry" name="industry" required aria-describedby="industry-error">
+            <option value="">Select</option>
+            <option>Construction and real estate</option><option>Energy and utilities</option><option>Financial services</option><option>Healthcare and life sciences</option><option>Logistics and transportation</option><option>Manufacturing</option><option>Public sector</option><option>Retail and consumer goods</option><option>Technology and telecom</option><option>Other</option>
+          </select>
+          <p class="field__error" id="industry-error" hidden></p>
+        </div>
+        <div class="field" id="industry-other-field" hidden>
+          <label for="industry-other"><span class="req" aria-hidden="true">*</span> Your industry</label>
+          <input id="industry-other" name="industry-other" type="text" aria-describedby="industry-other-error">
+          <p class="field__error" id="industry-other-error" hidden></p>
+        </div>
+                <div class="field">
+          <label for="size"><span class="req" aria-hidden="true">*</span> Number of employees</label>
+          <select id="size" name="size" required aria-describedby="size-error size-note">
+            <option value="">Select</option>
+            <option>Under 1,000</option><option>1,000 to 4,999</option><option>5,000 to 9,999</option><option>10,000 or more</option>
+          </select>
+          <p class="field__error" id="size-error" hidden></p>
+        </div>
+        <p class="form-note" id="size-note" role="status"></p>
+        <div class="field">
+          <label for="phone">Phone <span>(optional)</span></label>
+          <div class="phone-group">
+            <div class="phone-country">
+              <select id="phone-country" name="phone-country" aria-label="Country code" autocomplete="tel-country-code" aria-describedby="phone-error">
+                <option value="">Code</option>
+              </select>
+              <span class="phone-country__value" aria-hidden="true">Code</span>
+            </div>
+            <input id="phone" name="phone" type="tel" autocomplete="tel-national" aria-describedby="phone-error">
+          </div>
+          <p class="field__error" id="phone-error" hidden></p>
+        </div>
+        <button class="btn btn--primary btn--full" type="submit">Request a demo</button>
+      </form>
+    </div>
+
+    <div class="demo__done" data-view="done" hidden>
+      <span class="demo__check" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 13.5 5 5L20 8"/></svg></span>
+      <h2 tabindex="-1">Request received</h2>
+      <p>Our sales team will contact you at <strong class="demo__email" data-sent-email>name@company.com</strong> to arrange your demo.</p>
+      <p class="demo__edit">Wrong email? <button class="link-button" type="button" data-edit-email>Edit it</button></p>
+      <button class="btn btn--link" type="button" data-close-demo>Back to the page</button>
+    </div>
+    </div>
+    </div>
+  </dialog>
+
+  <script src="country-codes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
