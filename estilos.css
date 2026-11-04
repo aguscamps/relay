@@ -389,7 +389,8 @@ button, input, select { font: inherit; }
 .floating-cta.is-docked { justify-content: center; gap: 28px; width: 980px; height: var(--dock-h); margin-top: calc(var(--bar-gap) - var(--dock-h) + var(--bar-h)); padding: 0 40px; border: 0; border-radius: 999px; box-shadow: 0 20px 50px rgb(5 7 26 / 45%); }
 .floating-cta.is-docked > strong { font-size: 26px; letter-spacing: -0.025em; }
 .floating-cta.is-docked .floating-cta__stats b { font-size: 22px; }
-.cta-sentinel { height: 1px; margin-top: -24px; }
+/* Pegado al borde inferior de la barra: se acopla justo cuando deja de estar fija. */
+.cta-sentinel { height: 1px; margin-top: -72px; }
 html { scroll-padding-bottom: 96px; }
 @media (max-width: 1100px) { .floating-cta__stats { display: none; } }
 
